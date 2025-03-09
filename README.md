@@ -1,5 +1,5 @@
 
-![FrostColor Banner](https://raw.githubusercontent.com/sinanuygun7/frostcolor/main/images/banner.png)
+![FrostColor Banner](https://raw.githubusercontent.com/sinanuygun7/frostcolor/main/images/logo.png)
 
 ![Banner](images/banner.png)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
