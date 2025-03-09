@@ -54,12 +54,12 @@ If there is no '#' at the start of the code, it will add one. If the '#' is not 
 ```dart
 import 'package:frostcolor/frostcolor.dart';
 final frostcolor= FrostColor();
-color: frostcolor.clrHex('#FFAB5B'),
+color: frostcolor.clrHex('#000000'),
 ```
 #### FrostColor Extensions
 ```dart
 import 'package:frostcolor/extensions.dart';
-color: context.clrHexColor('#00879E'),
+color: context.clrHexColor('#000000'),
 ```
 
 ## Usage
@@ -70,7 +70,7 @@ color: context.clrHexColor('#00879E'),
 import 'package:frostcolor/extensions.dart';
 
 // Here's an example of how to use BuildContext
-color: context.clrHexColor('#00879E'),
+color: context.clrHexColor('#000000'),
 ```
 
 ### Use with class:
@@ -82,7 +82,7 @@ import 'package:frostcolor/frostcolor.dart';
 final frostcolor= FrostColor();
 
 //Use a class call to specify the colors.
-color: frostcolor.clrHex('#FFAB5B'),
+color: frostcolor.clrHex('#000000'),
 ```
 
 ## Additional information

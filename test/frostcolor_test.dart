@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:frostcolor/frostcolor.dart';
 
-
 void main() {
   group('FrostColor Tests', () {
     test('Varsayılan renk #000000 olmalı', () {
