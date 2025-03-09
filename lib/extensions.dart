@@ -1,24 +1,33 @@
 import 'package:flutter/widgets.dart';
 import 'package:frostcolor/frostcolor.dart';
+import 'package:frostcolor/frostfastcolor.dart';
 
 
 extension ExtensionsFrostColor on BuildContext {
   /// It's easy to use because it gives you access to code with a Build context structure.
 
-  String strHexColor(String hexcode) => 
+  String frostSTRColor(String hex) => 
   /// String => String 
   /// This function changes the hex code so that it uses the correct format.
   /// ```dart
-  /// colortext: context.strHexColor('#000000'),
+  /// String colorvalue: context.strHexColor('#000000'),
   /// ```
-  FrostColor().strHex(hexcode);
+  FrostColor().strHex(hex);
 
 
-  Color clrHexColor(String hexcode) => 
+  Color frostColor(String hex) => 
   /// String => Color
   /// This tool converts the hex code to the right color format.
   /// ```dart
-  /// color: context.clrHexColor('#000000'),
+  /// Color colorvalue: context.frostColor('#000000'),
   /// ```
-  FrostColor().clrHex(hexcode);
+  FrostColor().clrHex(hex);
+
+  Color ffColor(String hex)=> 
+  /// String => Color
+  /// This tool fast converts the hex code to the right color format.
+  /// ```dart
+  /// Color colorvalue: context.ffColor('#000000'),
+  /// ```
+  FFColor().clrHex(hex);
 }

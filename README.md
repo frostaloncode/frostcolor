@@ -1,91 +1,102 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+![FrostColor Banner](https://raw.githubusercontent.com/sinanuygun7/frostcolor/main/images/banner.png)
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+![Banner](images/banner.png)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![GitHub stars](https://img.shields.io/github/stars/sinanuygun7/frostcolor?style=social)](https://github.com/sinanuygun7/frostcolor)
+[![Pub.dev](https://img.shields.io/pub/v/frostcolor.svg)](https://pub.dev/packages/frostcolor)
+[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-red)](https://www.youtube.com/@frosTalonCode)
 
-The purpose of the package is to convert color hex codes into a format that can be used in Flutter.
+# Introduction
 
-## Features
+What is FrostColor?
 
-It formats it according to hex code rules. It conforms to the 3, 6, and 8 formats, which are the length rules of hex codes. 
-### Missing character completion:
-#### Three character completion:
+It puts the color hex codes into a form that can be used on the flutter. The package includes three different versions.  One version includes hex code checks. The version without an optional hex code checks. The package includes three versions:
 
-'#F' converts to '#FFF'
+* One version includes hex code checks.
+* One version doesn't include hex code checks.
+* One version doesn't include any functions.
 
-'#FA' converts to '#FAA'
+Why FrostColor?
 
-'#FAB' converts to '#FAB'
+* You can get different versions in a single package.
+* Hex code controls are available.
+* It's open source.
+* It runs quickly.
+* The code is simple, and the documentation is easy to understand.
+  
+# Installation
 
-The missing part is completed with the last character. 
+Add the following dependencies to your [pubspec.yaml](pubspec.yaml) file:
 
-### Invalid character substitution:
-'#GHIJKL' converts to '#FFFFFF'
-
-Characters that do not follow hex code rules are replaced with F.
-
-### Adding a missing '#':
-
-If there is no '#' at the start of the code, it will add one. If the '#' is not at the beginning and is in the content, it is deleted.
-
-#### Here are some examples:
-"FFAB5B" convert to "#FFAB5B"
-
-"F#FAB5B" convert to "#FFAB5B"
-
-"FF#B5B" convert to "#FFB5BB"
-
-### The color code "#000000" is set as transparent:
-
-"#000000" convert to Color.transparent
-
-## Getting started
-
-### Import
-#### FrostColor Class
-```dart
-import 'package:frostcolor/frostcolor.dart';
-final frostcolor= FrostColor();
-color: frostcolor.clrHex('#000000'),
-```
-#### FrostColor Extensions
-```dart
-import 'package:frostcolor/extensions.dart';
-color: context.clrHexColor('#000000'),
+```yaml
+dependencies:
+  frostcolor: [latest-version]
 ```
 
-## Usage
+Include the package using the bash command.
 
-### Use with Extensions:
+```bash
 
-```dart
-import 'package:frostcolor/extensions.dart';
+$ flutter pub add frostcolor
 
-// Here's an example of how to use BuildContext
-color: context.clrHexColor('#000000'),
 ```
 
-### Use with class:
+# Usage
+
+After you install it, here's how to use Flutter. The package includes three different versions.
+
+## FrostColor
+
+The version with hex codes verifies the color.
 
 ```dart
-import 'package:frostcolor/frostcolor.dart';
+final frostcolor = FrostColor();
 
-// The package class is being called
-final frostcolor= FrostColor();
 
-//Use a class call to specify the colors.
-color: frostcolor.clrHex('#000000'),
+final colorexample = frostcolor.frostColor( hex: '#000000');
+
+
+final stringexample = frostcolor.frostSTRColor( hex: '#000000');
 ```
 
-## Additional information
-[GitHub Link](https://github.com/sinanuygun7/frostcolor)
+## Fast FrostColor
 
-[pub.dev Link](https://pub.dev/packages/frostcolor)
+Hex code checks are not provided. There are no controls for fast operation.
+
+```dart
+final fastfrostcolor = FFColor();
+
+final colorexample = fastfrostcolor.ffColor( hex: '#000000')
+
+```
+
+## Direct FrostColor
+
+It lets you convert directly by making a call without using a function.
+
+```dart
+
+final colorexample = DFColor( hex: '#000000');
+
+```
+
+## Extension
+
+Build Context makes it easy for you to get things done.
+
+### FrostColor
+
+```dart
+
+final stringexample = context.frostSTRColor( hex: '#000000');
+
+final colorexample = context.frostColor( hex: '#000000');
+```
+
+### Fast FrostColor
+
+```dart
+final fastexample = context.ffColor( hex: '#000000')
+
+```

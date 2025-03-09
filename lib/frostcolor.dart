@@ -94,22 +94,26 @@ class FrostColor {
     _hexclr = Color(int.parse(_hexstr, radix: 16));
   }
 
-  String strHex(String hexcode) {
+  String strHex(String hex) {
     /// Returns the value of a String
     /// ```dart
     /// context.strHexColor('#000000')
     /// ```
-    _hexcode = hexcode;
+    _hexcode = hex;
     _startControl();
     _convertHex();
     return _hexstr;
   }
 
-  Color clrHex(String hexcode) {
+  int intHex(String hex){
+    return int.parse('FF${hex.replaceAll('#', '')}', radix: 16);
+  }
+
+  Color clrHex(String hex) {
     /// Returns the value of a Color
     /// context.clrHexColor('#000000')
     /// ```
-    _hexcode = hexcode;
+    _hexcode = hex;
     _startControl();
     _convertHex();
     _convertColor();
