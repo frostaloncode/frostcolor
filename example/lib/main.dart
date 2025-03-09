@@ -4,6 +4,15 @@ import 'package:frostcolor/extensions.dart';
 import 'package:frostcolor/frostcolor.dart';
 import 'package:frostcolor/frostfastcolor.dart';
 
+void main(){
+  runApp(
+    MaterialApp(
+      title: 'FrostColor',
+      home: Page(),
+    )
+  );
+}
+
 class Page extends StatelessWidget {
   Page({super.key});
 

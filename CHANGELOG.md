@@ -1,3 +1,6 @@
+## 0.9.7
+*   Add Example Code
+
 ## 0.9.6 
 * Add Documentation
 
@@ -12,7 +15,7 @@
 ## 0.9.3
 *   Add Direct FrostColor
 *   Add Fast FrostColor
-*   Add Example Code
+
 
 
 ## 0.9.2
