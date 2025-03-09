@@ -1,3 +1,6 @@
-## 0.0.1
+## 0.9.0
 
-* TODO: Describe initial release.
+* Missing character completion
+* Invalid character substitution
+* Adding a missing '#'
+* Hex code translates to color.
