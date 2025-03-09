@@ -88,4 +88,4 @@ color: frostcolor.clrHex('#FFAB5B'),
 ## Additional information
 [GitHub Link](https://github.com/sinanuygun7/frostcolor)
 
-[pub.dev Link](https://github.com/sinanuygun7/frostcolor)
+[pub.dev Link](https://pub.dev/packages/frostcolor)
