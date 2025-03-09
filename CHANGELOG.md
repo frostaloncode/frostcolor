@@ -1,3 +1,8 @@
+## 0.9.6 
+* Add Documentation
+
+
+
 ## 0.9.5
 * Add repository link
 

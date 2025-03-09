@@ -4,6 +4,7 @@
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![GitHub stars](https://img.shields.io/github/stars/sinanuygun7/frostcolor?style=social)](https://github.com/sinanuygun7/frostcolor)
 [![Pub.dev](https://img.shields.io/pub/v/frostcolor.svg)](https://pub.dev/packages/frostcolor)
+[![Dokümantasyonu Görüntüle](https://img.shields.io/badge/Dokümantasyon-v0.9.6-brightgreen.svg)](https://pub.dev/documentation/frostcolor/latest/)
 [![YouTube](https://img.shields.io/badge/YouTube-Subscribe-red)](https://www.youtube.com/@frosTalonCode)
 
 # Introduction
