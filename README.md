@@ -1,7 +1,6 @@
 
-![FrostColor Banner](https://raw.githubusercontent.com/sinanuygun7/frostcolor/main/images/logo.png)
+![FrostColor Banner](https://raw.githubusercontent.com/sinanuygun7/frostcolor/main/images/banner.png)
 
-![Banner](images/banner.png)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![GitHub stars](https://img.shields.io/github/stars/sinanuygun7/frostcolor?style=social)](https://github.com/sinanuygun7/frostcolor)
 [![Pub.dev](https://img.shields.io/pub/v/frostcolor.svg)](https://pub.dev/packages/frostcolor)
