@@ -2,31 +2,32 @@ import 'package:flutter/material.dart';
 
 class FrostColor {
   /// Hex Code Convert to Color
-  
-  /// Constructor with a default hex value of black (#000000)
-  FrostColor(
-    {String hex = '#000000'}) : _hexcode = hex {
 
+  /// Constructor with a default hex value of black (#000000)
+  FrostColor({String hex = '#000000'}) : _hexcode = hex {
     /// Perform initial validation or setup
-    _startControl(); 
+    _startControl();
 
     /// Convert the hex code to a proper format if necessary
     _convertHex();
 
     /// Convert the hex code to a color representation
-    _convertColor(); 
+    _convertColor();
 
     /// Perform final checks or processing
-    _endControl(); 
+    _endControl();
   }
 
   /// variables
-  String _hexcode; /// Hex Code
-  late String _hexstr; /// Hex Code String 
-  late Color _hexclr; /// Hex Code Color
+  String _hexcode;
 
+  /// Hex Code
+  late String _hexstr;
 
-  
+  /// Hex Code String
+  late Color _hexclr;
+
+  /// Hex Code Color
 
   void _startControl() {
     /// control hex code
@@ -34,7 +35,6 @@ class FrostColor {
     final hexPattern = RegExp(
       r'^#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})$',
     );
-
 
     if (!hexPattern.hasMatch(_hexcode)) {
       /// First character change "#"
@@ -105,7 +105,7 @@ class FrostColor {
     return _hexstr;
   }
 
-  int intHex(String hex){
+  int intHex(String hex) {
     return int.parse('FF${hex.replaceAll('#', '')}', radix: 16);
   }
 
