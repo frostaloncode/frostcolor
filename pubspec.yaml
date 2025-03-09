@@ -1,7 +1,8 @@
 name: frostcolor
-description: "A new Flutter package project."
-version: 0.0.1
-homepage:
+description: "Using the hex code makes it so the colors can be used in Flutter."
+version: 1.0.0
+author: Sinan UYĞUN <sinanuygunofficial@gmail.com>
+homepage: https://github.com/sinanuygun7
 
 environment:
   sdk: ^3.7.0
