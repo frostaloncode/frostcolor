@@ -1,10 +1,14 @@
 
 ![FrostColor Banner](https://raw.githubusercontent.com/sinanuygun7/frostcolor/main/images/banner.png)
 
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+![Version](https://img.shields.io/badge/Version-0.9.8-blue)
+![Contributors](https://img.shields.io/github/contributors/sinanuygun7/frostcolor)
 [![GitHub stars](https://img.shields.io/github/stars/sinanuygun7/frostcolor?style=social)](https://github.com/sinanuygun7/frostcolor)
+
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Pub.dev](https://img.shields.io/pub/v/frostcolor.svg)](https://pub.dev/packages/frostcolor)
-[![Dokümantasyonu Görüntüle](https://img.shields.io/badge/Dokümantasyon-v0.9.7-brightgreen.svg)](https://pub.dev/documentation/frostcolor/latest/)
+[![Dokümantasyonu Görüntüle](https://img.shields.io/badge/Dokümantasyon-v0.9.8-brightgreen.svg)](https://pub.dev/documentation/frostcolor/latest/)
+[![GitHub Wiki](https://img.shields.io/badge/Wiki-Available-blue)](https://github.com/sinanuygun7/frostcolor/wiki)
 [![YouTube](https://img.shields.io/badge/YouTube-Subscribe-red)](https://www.youtube.com/@frosTalonCode)
 
 # Introduction
@@ -51,6 +55,8 @@ After you install it, here's how to use Flutter. The package includes three diff
 The version with hex codes verifies the color.
 
 ```dart
+import 'package:frostcolor/frostcolor.dart';
+
 final frostcolor = FrostColor();
 
 
@@ -65,9 +71,11 @@ final stringexample = frostcolor.frostSTRColor( hex: '#000000');
 Hex code checks are not provided. There are no controls for fast operation.
 
 ```dart
-final fastfrostcolor = FFColor();
+import 'package:frostcolor/frostcolor.dart';
 
-final colorexample = fastfrostcolor.ffColor( hex: '#000000')
+final frostcolor = FrostColor();
+
+final colorexample = frostcolor.ffColor( hex: '#000000')
 
 ```
 
@@ -76,6 +84,7 @@ final colorexample = fastfrostcolor.ffColor( hex: '#000000')
 It lets you convert directly by making a call without using a function.
 
 ```dart
+import 'package:frostcolor/frostcolor.dart';
 
 final colorexample = DFColor( hex: '#000000');
 
@@ -88,15 +97,19 @@ Build Context makes it easy for you to get things done.
 ### FrostColor
 
 ```dart
+import 'package:frostcolor/frostcolor.dart';
 
 final stringexample = context.frostSTRColor( hex: '#000000');
 
 final colorexample = context.frostColor( hex: '#000000');
+
 ```
 
 ### Fast FrostColor
 
 ```dart
+import 'package:frostcolor/frostcolor.dart';
+
 final fastexample = context.ffColor( hex: '#000000')
 
 ```

@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:frostcolor/directfrostcolor.dart';
-import 'package:frostcolor/extensions.dart';
+import 'package:frostcolor/extension.dart';
 import 'package:frostcolor/frostcolor.dart';
-import 'package:frostcolor/frostfastcolor.dart';
+
 
 void main(){
   runApp(
@@ -17,7 +16,6 @@ class Page extends StatelessWidget {
   Page({super.key});
 
   /// Provides classroom access.
-  final ffcolor = FFColor();
   final frostcolor = FrostColor();
 
   @override
@@ -43,7 +41,7 @@ class Page extends StatelessWidget {
             Text('DFColor', style: TextStyle(color: DFColor('#493628'))),
 
             /// Fast FrostColor
-            Text('FFColor', style: TextStyle(color: ffcolor.clrHex('8D493A'))),
+            Text('FFColor', style: TextStyle(color: frostcolor.ffColor('8D493A'))),
 
             /// FrostColor
             Text(

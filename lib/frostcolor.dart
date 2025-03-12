@@ -1,6 +1,10 @@
+
+
 import 'package:flutter/material.dart';
 
-class FrostColor {
+
+
+class FrostColor{
   /// Hex Code Convert to Color
 
   /// Constructor with a default hex value of black (#000000)
@@ -26,6 +30,13 @@ class FrostColor {
 
   /// Hex Code String
   late Color _hexclr;
+
+  /// Added for fast execution only converts to hexcode color,
+  ///  assuming the hexcode conforms to the rules, without any checks.
+
+  Color ffColor(String hex) =>
+  /// Fast Color Functions
+  Color(int.parse('FF${hex.replaceAll('#', '')}', radix: 16));
 
   /// Hex Code Color
 
@@ -120,4 +131,35 @@ class FrostColor {
     _endControl();
     return _hexclr;
   }
+
+}
+
+class DFColor extends Color {
+  /// DFColor is DirectFrostColor
+
+  /// Factory constructor to create a DFColor instance
+  factory DFColor(String hex) {
+    return DFColor._internal(_fastConvert(hex));
+  }
+
+  /// Private constructor that calls Color's constructor
+  DFColor._internal(super.colorValue);
+
+  /// Function to convert hex to integer for Color
+  static int _fastConvert(String hex) {
+    return int.parse('FF${hex.replaceAll('#', '')}', radix: 16);
+  }
+
+  /// `value` yerine `toARGB32()` kullan
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+    if (other is Color) {
+      return toARGB32() == other.toARGB32();
+    }
+    return false;
+  }
+
+  @override
+  int get hashCode => toARGB32().hashCode;
 }
