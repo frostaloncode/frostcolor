@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:frostcolor/frostcolor.dart';
 
-
 void main() {
   group('FrostColor Tests', () {
     test('Varsayılan renk #000000 olmalı', () {
@@ -19,7 +18,10 @@ void main() {
       final frostColor = FrostColor();
       expect(frostColor.clrHex('#FF5733'), equals(const Color(0xFFFF5733)));
       expect(frostColor.ffColor('#FF5733'), equals(const Color(0xFFFF5733)));
-      expect(DFColor('#FF5733').toARGB32(), equals(const Color(0xFFFF5733).toARGB32()));
+      expect(
+        DFColor('#FF5733').toARGB32(),
+        equals(const Color(0xFFFF5733).toARGB32()),
+      );
     });
 
     test('Eksik karakterler tamamlanmalı', () {

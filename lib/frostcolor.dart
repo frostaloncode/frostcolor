@@ -1,10 +1,6 @@
-
-
 import 'package:flutter/material.dart';
 
-
-
-class FrostColor{
+class FrostColor {
   /// Hex Code Convert to Color
 
   /// Constructor with a default hex value of black (#000000)
@@ -131,7 +127,6 @@ class FrostColor{
     _endControl();
     return _hexclr;
   }
-
 }
 
 class DFColor extends Color {

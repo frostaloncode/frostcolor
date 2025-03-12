@@ -2,14 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:frostcolor/extension.dart';
 import 'package:frostcolor/frostcolor.dart';
 
-
-void main(){
-  runApp(
-    MaterialApp(
-      title: 'FrostColor',
-      home: Page(),
-    )
-  );
+void main() {
+  runApp(MaterialApp(title: 'FrostColor', home: Page()));
 }
 
 class Page extends StatelessWidget {
@@ -41,7 +35,10 @@ class Page extends StatelessWidget {
             Text('DFColor', style: TextStyle(color: DFColor('#493628'))),
 
             /// Fast FrostColor
-            Text('FFColor', style: TextStyle(color: frostcolor.ffColor('8D493A'))),
+            Text(
+              'FFColor',
+              style: TextStyle(color: frostcolor.ffColor('8D493A')),
+            ),
 
             /// FrostColor
             Text(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:frostcolor/frostcolor.dart';
 
-extension FrostColorExtension on BuildContext{
+extension FrostColorExtension on BuildContext {
   /// It's easy to use because it gives you access to code with a Build context structure.
 
   String frostSTRColor(String hex) =>
