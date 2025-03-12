@@ -3,7 +3,6 @@ description: "Using the hex code makes it so the colors can be used in Flutter."
 version: 0.9.8
 homepage: https://github.com/sinanuygun7
 repository: https://github.com/sinanuygun7/frostcolor
-publish_to: https://pub.dev
 documentation: https://github.com/sinanuygun7/frostcolor/wiki
 example:
   path: example/
