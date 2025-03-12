@@ -1,3 +1,9 @@
+## 0.9.8
+* All the codes have been grouped together.
+* Files have been organized.
+* A Github Wiki has been added.
+* The documentation has also been edited.
+
 ## 0.9.7
 *   Add Example Code
 
