@@ -1,6 +1,6 @@
 
 
-![FrostColor Banner](https://raw.githubusercontent.com/frostaloncode/frostcolor/main/images/banner.png)
+![FrostColor Banner](https://raw.githubusercontent.com/frostaloncode/frostcolor/refs/heads/main/images/banner.png)
 
 # Contact Me
 
