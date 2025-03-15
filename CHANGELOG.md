@@ -1,4 +1,9 @@
 ## 1.0.0
+* FrostColor, FFColor, and DFColor now use a single file.
+* DFColor color control has been removed to make it faster.
+* Hex code control has been reduced to FrostColor. 
+* Separated return types into String and Color.
+* The extension return types and settings have been changed.
 
 ## 0.9.9
 * The format has been checked.
