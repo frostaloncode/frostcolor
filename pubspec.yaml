@@ -1,6 +1,6 @@
 name: frostcolor
 description: "Using the hex code makes it so the colors can be used in Flutter."
-version: 0.9.9
+version: 1.0.0
 homepage: https://github.com/sinanuygun7
 repository: https://github.com/sinanuygun7/frostcolor
 documentation: https://github.com/sinanuygun7/frostcolor/wiki
