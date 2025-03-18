@@ -3,18 +3,20 @@ name: Publish to pub.dev
 on:
   push:
     tags:
-      - 'v[0-9]+.[0-9]+.[0-9]+' 
+    - 'v[0-9]+.[0-9]+.[0-9]+' 
 
 jobs:
   publish:
     permissions:
-      id-token: write 
+      id-token: write
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    with:
+      - environment: pub.dev
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: dart-lang/setup-dart@v1
       - name: Install dependencies
         run: dart pub get
-      # - run: dart tool/generate-code.dart
       - name: Publish
         run: dart pub publish --force
