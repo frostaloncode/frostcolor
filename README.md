@@ -16,10 +16,10 @@
 # Project Details
 
 ![Contributors](https://img.shields.io/github/contributors/frostaloncode/frostcolor)
-![Version](https://img.shields.io/badge/Version-1.0.0-blue)
+![Version](https://img.shields.io/badge/Version-1.0.1-blue)
 [![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![Pub.dev](https://img.shields.io/pub/v/frostcolor.svg)](https://pub.dev/packages/frostcolor)
-[![Dokümantasyonu Görüntüle](https://img.shields.io/badge/Documentation-v1.0.0-brightgreen.svg)](https://pub.dev/documentation/frostcolor/latest/)
+[![Dokümantasyonu Görüntüle](https://img.shields.io/badge/Documentation-v1.0.1-brightgreen.svg)](https://pub.dev/documentation/frostcolor/latest/)
 [![GitHub Wiki](https://img.shields.io/badge/Wiki-Available-blue)](https://github.com/frostaloncode/frostcolor/wiki)
 [![YouTube](https://img.shields.io/badge/YouTube-Subscribe-red)](https://www.youtube.com/@frosTalonCode)
 

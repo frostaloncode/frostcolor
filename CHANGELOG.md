@@ -1,3 +1,6 @@
+## 1.0.1
+* Add Version Control System 
+
 ## 1.0.0
 * FrostColor, FFColor, and DFColor now use a single file.
 * DFColor color control has been removed to make it faster.
