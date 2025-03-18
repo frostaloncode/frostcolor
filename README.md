@@ -2,7 +2,11 @@
 
 ![FrostColor Banner](https://raw.githubusercontent.com/frostaloncode/frostcolor/refs/heads/main/images/banner.png)
 
-# Contact Me
+# Developers
+* Sinan UYĞUN - Developer 
+
+# Contact
+
 
 [![GitHub stars](https://img.shields.io/github/stars/frostaloncode/frostcolor?style=social)](https://github.com/frostaloncode/frostcolor)
 [![GitLab stars](https://img.shields.io/gitlab/stars/frosTalon/frostcolor?style=social)](https://gitlab.com/frosTalon/frostcolor)
