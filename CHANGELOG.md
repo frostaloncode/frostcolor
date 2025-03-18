@@ -1,6 +1,4 @@
-## 1.0.1
-* Add Version Control System 
-* Fixed error
+
 
 ## 1.0.0
 * FrostColor, FFColor, and DFColor now use a single file.
