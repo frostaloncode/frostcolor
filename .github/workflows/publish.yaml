@@ -3,7 +3,7 @@ name: Publish to pub.dev
 on:
   push:
     tags:
-      - 'v[0-9]+.[0-9]+.[0-9]+'
+      - 'v[0-9]+.[0-9]+.[0-9]+'  # Versiyon etiketi
 
 jobs:
   publish:
@@ -11,17 +11,18 @@ jobs:
       id-token: write
     
     runs-on: ubuntu-latest
+    
+    # Reusable workflow'u burada üst düzeyde çağırıyoruz
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    with:
+      environment: pub.dev  # Bu, reusable workflow'a parametre olarak veriliyor.
+      
     steps:
       - uses: actions/checkout@v3
-      
       - uses: dart-lang/setup-dart@v1
         with:
           sdk: stable
-
       - name: Install dependencies
         run: dart pub get
-
-      - name: Publish
-        uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
-        with:
-          environment: pub.dev
+      - name: Publish to pub.dev
+        run: dart pub publish --force
