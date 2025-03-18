@@ -3,7 +3,7 @@ name: Publish to pub.dev
 on:
   push:
     tags:
-    - 'v[0-9]+.[0-9]+.[0-9]+' 
+      - 'v[0-9]+.[0-9]+.[0-9]+'
 
 jobs:
   publish:
@@ -13,10 +13,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+      
+      - uses: dart-lang/setup-dart@v1
         with:
-          - environment: pub.dev
+          sdk: stable
+
       - name: Install dependencies
         run: dart pub get
+
       - name: Publish
-        run: dart pub publish --force
+        uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+        with:
+          environment: pub.dev
