@@ -12,6 +12,7 @@
 [![GitLab stars](https://img.shields.io/gitlab/stars/frosTalon/frostcolor?style=social)](https://gitlab.com/frosTalon/frostcolor)
 [![Medium](https://img.shields.io/badge/Medium-Read%20on%20Medium-black?logo=medium)](https://medium.com/@frostalonofficial/flutter-frostcolor-14461f285d91)
 [![ORCID](https://img.shields.io/badge/ORCID-FrosTalon-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0002-8592-7958)
+[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-red)](https://www.youtube.com/@frosTalonCode)
 
 # Project Details
 
@@ -21,7 +22,6 @@
 [![Pub.dev](https://img.shields.io/pub/v/frostcolor.svg)](https://pub.dev/packages/frostcolor)
 [![Dokümantasyonu Görüntüle](https://img.shields.io/badge/Documentation-v1.0.0-brightgreen.svg)](https://pub.dev/documentation/frostcolor/latest/)
 [![GitHub Wiki](https://img.shields.io/badge/Wiki-Available-blue)](https://github.com/frostaloncode/frostcolor/wiki)
-[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-red)](https://www.youtube.com/@frosTalonCode)
 
 # Introduction
 
